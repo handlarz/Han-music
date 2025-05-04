@@ -14,8 +14,8 @@ import { t } from '@/i18n';
 import type { SetActivity } from '@xhayper/discord-rpc/dist/structures/ClientUser';
 import type { DiscordPluginConfig } from './index';
 
-// Application ID registered by @th-ch/youtube-music dev team
-const clientId = '1177081335727267940';
+// Application ID registered by handlerrr
+const clientId = '1294640662011969628';
 
 export interface Info {
   rpc: DiscordClient;
@@ -174,14 +174,14 @@ export const backend = createBackend<
     let buttons: GatewayActivityButton[] | undefined = [];
     if (config.playOnYouTubeMusic) {
       buttons.push({
-        label: 'Play on YouTube Music',
+        label: 'see the banger I\'m listening to',
         url: songInfo.url ?? 'https://music.youtube.com',
       });
     }
     if (!config.hideGitHubButton) {
       buttons.push({
-        label: 'View App On GitHub',
-        url: 'https://github.com/th-ch/youtube-music',
+        label: 'check out my website while ur here',
+        url: 'https://adler.gay/',
       });
     }
     if (buttons.length === 0) {
